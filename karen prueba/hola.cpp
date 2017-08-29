@@ -9,18 +9,27 @@ int main()
 }
 
 
-#include 
-int main(void)
+#include<iostream>
+using namespace std;
+
+int main()
 {
-for (int j=2;j<=100;j++){//por definicion el 1 no es primo, se empieza en 2
-int a=0;
-for(int i=1;i<=100;i++)//divide a j entre los números del 1 al 100
-{
-    if(j%i==0) // si num1 módulo de i es 0, incrementamos a en 1.
-    a++;
-}
-if (a==2){ 
-printf("%d\n", j);
-}
- }
+  int n=0,c=0,c2=0,res=0,nc=0;
+  cout<<"Introducir un rango: "; cin>>n;
+  for(c=1;c<=n;c++)
+  {
+    for(c2=1;c2<=c;c2++)
+    {
+      res=c%c2;
+      if(res==0)
+      {
+        nc=nc+1;
+      }
+    }
+    if(nc==2)
+    {
+      cout<<" "<<c;
+    }
+    nc=0;
+  }
 }
