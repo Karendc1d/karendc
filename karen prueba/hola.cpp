@@ -69,20 +69,21 @@ return 0;
 
 
 
-
 #include <iostream>
 using namespace std;
 int main()
 {
-int n,mayor,menor;
-double b;
+int mayor,menor;
+float b,n,m;
 double acumula=0.0;
+m=0;
 cout <<"Cuantos numeros quiere ingresar: " << endl;
 cin >> n;
 for (int cont=0,valor; n>cont; cont =cont+1){
   cout <<"Ingrese un numero: "<< endl;
   cin>>valor;
-  if(cont==1){
+  m+=valor;
+  if(cont==0){
     mayor=valor;
     menor= valor;
   }
@@ -93,6 +94,46 @@ for (int cont=0,valor; n>cont; cont =cont+1){
   }
    cout<<"El mayor es"<<mayor<<endl;
     cout<<"El menor es"<<menor<<endl;
-    b=mayor+menor//2;
+    b=m/n;
 ;cout<<"El promedio es"<<b;}
 
+
+
+
+/*
+#include <iostream>
+using namespace std;
+long long accumulator=1;
+int main()
+{
+  short number;
+  cout<<"Enter a number";
+  cin>>number;
+  cout<<"The factorial of "<<number<<" is "; 
+int accumulator =1;
+for (;number>0;accumulator *= number--);
+cout <<accumulator<<" ./n";
+if(accumulator<0){
+    cout<<"es negativo";
+
+}
+
+return 0;
+}
+*/
+
+
+#include <iostream>
+using namespace std;
+int main()
+{ 
+int N;
+cin>>N;
+do{
+  cout<<"Hello World!/n";
+}while(--N>0);
+
+return 0;
+}
+  
+###ELSE : 
