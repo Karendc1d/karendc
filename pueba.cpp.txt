@@ -23,6 +23,23 @@ return 0;
 
 }
 
+#Invertir los elementos de na lista 
+
+#include <iostream>
+using namespace std;
+
+int main(){
+  int c=5
+  int lista[]={};
+  for (int lista[i]=0,i<=5;i++)
+  cout<<"Ingresar numeros"<<endl;
+  cin>>lista[i]
+  cout <<lista[c]<<endl;
+  int c-=1 
+
+  return 0;
+}
+
 
 #Suma de elementos de una lita
    
