@@ -62,7 +62,7 @@ using namespace std;
 int main(i){
 char lista[]={"Hola,","Cerraré el Facebook y el Whatsapp!","Voy a terminar mi tarea","Bye,"};
 for ( int i=3;i==0;i--)
-cout << lista[i]<< endl;
+cout << lista[i]<< endl;0
   return ;
 }
 
