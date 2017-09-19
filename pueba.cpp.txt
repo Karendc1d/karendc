@@ -1,17 +1,17 @@
 
 #include <iostream>
 using namespace std;
-int main{}{
-  
+int main(){
+  int i, j,;
 while (num!=max){
-    for (i=tope, j=tope; j<=ene; j++){
+    for (i=tope,j=tope; j<= ene; j++){
         num++;
         meterEnVector(); }
     for (i=tope+1, j=ene; i<=eme; i++){
         num++;
         meterEnVector(); // definila
     }
-    for (i=eme, j=ene-1; j>=tope; j
+    for (i=eme, j=ene-1;j>=tope; j
         num++;
         meterEnVector(); // 
     }
@@ -37,6 +37,27 @@ using namespace std;
   }
    return 0;
  }
+
+
+
+
+#Cadena 
+#include <iostream>
+using namespace std;
+
+int main(i){
+char lista[]={"Hola,","Cerraré el Facebook y el Whatsapp!","Voy a terminar mi tarea","Bye,"};
+for ( int i=3;i==0;i--)
+cout << lista[i]<< endl;
+  return ;
+}
+
+
+
+
+
+
+
 
 
 
