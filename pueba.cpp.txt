@@ -4,24 +4,21 @@ using namespace std;
 int main(){
   int i, j,;
 while (num!=max){
-    for (i=tope,j=tope; j<= ene; j++){
+    for (i=punta,j=punta; j<= ene; j++{
         num++;
         meterEnVector(); }
-    for (i=tope+1, j=ene; i<=eme; i++){
+    for (i=punta+1, j=ene; i<=eme; i++){
         num++;
         meterEnVector(); // definila
     }
-    for (i=eme, j=ene-1;j>=tope; j
+    for (i=eme, j=ene-1;j>=punta; j
         num++;
         meterEnVector(); // 
-    }
-    for (i=eme-1, j=tope; i>tope; i--) 
+ }
+    for (i=eme-1, j=punta; i>punta; i--) 
         num++;
-        meterEnVector(); 
-}
-return 0;
-
-}
+        meterEnVector(); }
+return 0;}
 
 #Invertir los elementos de na lista 
 
@@ -74,27 +71,3 @@ cout << lista[i]<< endl;
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-#include <iostream>
-using namespace std;
-int main{}{
-	int x,y,z;
-	x=5;
-	y=6;
-	z=x+y;
-	cout << z << endl;
-	return 0;
-} 
