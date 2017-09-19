@@ -1,3 +1,55 @@
+
+#include <iostream>
+using namespace std;
+int main{}{
+  
+while (num!=max){
+    for (i=tope, j=tope; j<=ene; j++){
+        num++;
+        meterEnVector(); }
+    for (i=tope+1, j=ene; i<=eme; i++){
+        num++;
+        meterEnVector(); // definila
+    }
+    for (i=eme, j=ene-1; j>=tope; j
+        num++;
+        meterEnVector(); // 
+    }
+    for (i=eme-1, j=tope; i>tope; i--) 
+        num++;
+        meterEnVector(); 
+}
+return 0;
+
+}
+
+
+#Suma de elementos de una lita
+   
+   #include <iostream>
+using namespace std;
+ int main(){
+   int lista[]={1,2,3,4,5};
+   int suma=0;
+  for (int i=0;i<5;i++){
+    suma=suma+lista[i];
+  cout<<"la suma de los elemontos es "<<suma<<endl;
+  }
+   return 0;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 using namespace std;
 int main{}{
