@@ -1,3 +1,154 @@
+#include <iostream>
+using namespace std;
+ 
+void main()
+{
+	int sum = 0;
+	int n = 1000;
+ 
+	for(int i = 0; i < n; i++)
+	{
+		if(3*i < n)
+			sum += 3*i;
+		if(5*i < n && (5*i) % 3 != 0)
+			sum += 5*i;
+	}
+	cout << "Sum: " << sum << endl;
+	system("pause");
+}
+
+
+#include<iostream>
+using namespace std;
+
+int fibo(int n)
+{
+    if(n == 0 || n == 1)
+       return n;
+    else
+       return fibo(n - 2) + fibo(n - 1);
+}
+
+int main()
+{
+    cout<<"\n         FIBONACCI \n\n";
+    
+    int i, num ;
+    
+    do
+    {
+        cout<<"Ingrese un numero entero y positivo: ";
+        cin>>num;
+        
+    } while(num < 0);
+    
+    cout<<"\nLa serie es: \n\n\t";
+    
+    for(i=0; i<num; i++)
+    {
+       if(fibo(i) != 0)
+          cout<< ", "; 
+        
+        cout<< fibo(i);       
+    }
+    
+    system("pause");
+    
+    return 0;
+}
+
+#include <stdio.h>
+#include <stdlib.h>
+ 
+int main()
+{
+    long long int i, resultado;
+    long long int MAX = 600851475143;
+    int num;
+ 
+    for( i = 2; i < MAX; i++)
+    {
+       if(MAX % i == 0)
+       {
+           MAX /= i;
+           i = 2;
+        }
+    }
+ 
+    printf("El maximo factor primo de 600851475143 es %d\n\n", MAX );
+ 
+    system("pause");
+    return 0;
+}
+ 
+ 
+ def ispalindrome(numero):
+    if str(numero)==str(numero)[::-1]:
+        return True
+    else:
+        return False
+maxpalindrome=1
+for numero1 in range(100,999):
+    for numero2 in range(100,999):
+        producto=numero1*numero2  
+        if ispalindrome(producto):
+            if producto>maxPalindrome:
+                maxPalindrome=producto
+                maxnum1=numero1
+                maxnum2=numero2
+print maxpalindrome,maxnum1,maxnum2
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 #include <iostream>
 using namespace std;
