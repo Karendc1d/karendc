@@ -2,7 +2,9 @@
 #include <iostream>
 #include <equipos.h>
 #include <jugadores.h>
+#include "string";
 using namespace std;
+
 
 int main(){
 
@@ -84,70 +86,10 @@ int main(){
   return 0;
 }
 
-            
-            
-            
-   
-            
- //DEFINICIÓN DE CLASE
-            
- #ifndef JUGADORES_H
-#define JUGADORES_H
-#ifndef EQUIPO_H
-#define EQUIPO_H
-#endif // EQUIPO_H
-#include <iostream>
-#include <string>
-using namespace std;
-
-class Equipo{
-  private:
-    string nombre;
-    class Jugadores;
-  public:
-    Equipo(string, class,class,class,class,class,class,class,class,class,class,class);
-    void competir();
-Equipo::Equipo(string z, class x){
-  nombre= z;
-  class Jugadores=x;
-}
-void competir(){
-  cout<<"¡El equipo "<<nombre<<" competirá hoy!"<<endl;
-}
-};
 
 
-class Jugadores{
-  private:
-    string name,posicion;
-    int camiseta;agresividad;
-  public:
-    Jugadores(string,string,int, int);
-    void jugar();
-    void print();
 
-Jugadores::Jugadores(string x,string y,int z, int w){
-  name=x;
-  posicion=y;
-  camiseta=z;
-  agresividad=w;
-}
-void Jugadores::leer(){
-  cout<<"El jugador"<<name<<"juega en la posición de "<<posicion<<"con el número de camiseta"<<camiseta<<endl;
-}
-void Jugadores::print (){
-  if (agresividad)>=5{
-    cout<<"El jugador está muy agresivo,¡Cámbialo!"<<endl;
-  }
-  else {
-    cout<<"EL jugador está calmado,déjalo jugar"<<endl;
-  }
-}
-};
-
-
-//Definicion de la clase 2
-
+//class
 
 #ifndef JUGADORES_H
 #define JUGADORES_H
@@ -158,16 +100,28 @@ void Jugadores::print (){
 #include <string>
 using namespace std;
 
+
 class Equipo{
   private:
     string nombre;
-    class Jugadores;
+    jugadores player[11];
   public:
-    Equipo(string, class,class,class,class,class,class,class,class,class,class,class);
+    Equipo(string);
     void competir();
-Equipo::Equipo(string z, class x){
+Equipo(string z, jugadores j1,jugadores j2,jugadores j3,jugadores j4,jugadores j5,jugadores j6,jugadores j7,jugadores j8,jugadores j9,jugadores j10,jugadores j11){
   nombre= z;
-  class Jugadores=x;
+  player[0]=j1;
+  player[1]=j2;
+  player[2]=j3;
+  player[3]=j4;
+  player[4]=j5;
+  player[5]=j6;
+  player[6]=j7;
+  player[7]=j8;
+  player[8]=j9;
+  player[9]=j10;
+  player[10]=j11;
+  
 }
 void competir(){
   cout<<"¡El equipo "<<nombre<<" competirá hoy!"<<endl;
@@ -182,16 +136,16 @@ class Jugadores{
     void jugar();
     void print();
 
-Jugadores::Jugadores(string x,string y,int z, int w){
+Jugadores(string x,string y,int z, int w){
   name=x;
   posicion=y;
   camiseta=z;
   agresividad=w;
 }
-void Jugadores::leer(){
+void jugar(){
   cout<<"El jugador"<<name<<"juega en la posición de "<<posicion<<"con el número de camiseta"<<camiseta<<endl;
 }
-void Jugadores::print (){
+void print (){
   if (agresividad)>=5{
     cout<<"El jugador está muy agresivo,¡Cámbialo!"<<endl;
   }
@@ -201,12 +155,6 @@ void Jugadores::print (){
 }
 };
 };
-
-
-
-
-
-
 
 
 
