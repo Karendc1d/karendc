@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 
-  Equipo x=("Bayern Munchen", class Jugadores(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11));
+  Equipo x=("Bayern Munchen", Jugadores(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11));
     x.competir();
 
           Jugadores p1=("Neuer";"arquero";1;3);
@@ -43,7 +43,7 @@ int main(){
             p11.jugar();
             p11.print();
 
- Equipo y=("Borrusia Dortmun", class Jugadores(q1,q2,q3,q4,q6,q7,q8,q9,q10,q11));
+ Equipo y=("Borrusia Dortmun", Jugadores(q1,q2,q3,q4,q6,q7,q8,q9,q10,q11));
 
     y.competir();
 
