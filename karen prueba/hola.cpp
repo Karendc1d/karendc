@@ -146,6 +146,62 @@ void Jugadores::print (){
 };
 
 
+//Definicion de la clase 2
+
+
+#ifndef JUGADORES_H
+#define JUGADORES_H
+#ifndef EQUIPO_H
+#define EQUIPO_H
+#endif // EQUIPO_H
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Equipo{
+  private:
+    string nombre;
+    class Jugadores;
+  public:
+    Equipo(string, class,class,class,class,class,class,class,class,class,class,class);
+    void competir();
+Equipo::Equipo(string z, class x){
+  nombre= z;
+  class Jugadores=x;
+}
+void competir(){
+  cout<<"¡El equipo "<<nombre<<" competirá hoy!"<<endl;
+}
+
+class Jugadores{
+  private:
+    string name,posicion;
+    int camiseta;agresividad;
+  public:
+    Jugadores(string,string,int, int);
+    void jugar();
+    void print();
+
+Jugadores::Jugadores(string x,string y,int z, int w){
+  name=x;
+  posicion=y;
+  camiseta=z;
+  agresividad=w;
+}
+void Jugadores::leer(){
+  cout<<"El jugador"<<name<<"juega en la posición de "<<posicion<<"con el número de camiseta"<<camiseta<<endl;
+}
+void Jugadores::print (){
+  if (agresividad)>=5{
+    cout<<"El jugador está muy agresivo,¡Cámbialo!"<<endl;
+  }
+  else {
+    cout<<"EL jugador está calmado,déjalo jugar"<<endl;
+  }
+}
+};
+};
+
 
 
 
