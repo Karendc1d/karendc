@@ -1,6 +1,7 @@
 //INT MAIN
-
 #include <iostream>
+#include <equipos.h>
+#include <jugadores.h>
 using namespace std;
 
 int main(){
@@ -90,8 +91,11 @@ int main(){
             
  //DEFINICIÓN DE CLASE
             
-  #ifndef JUGADOR_H
+ #ifndef JUGADOR_H
 #define JUGADOR_H
+#ifndef EQUIPO_H
+#define EQUIPO_H
+#endif // EQUIPO_H
 #include <iostream>
 #include <string>
 using namespace std;
@@ -139,7 +143,6 @@ void Jugadores::print (){
   }
 }
 };
-
 
 
 
