@@ -91,8 +91,8 @@ int main(){
             
  //DEFINICIÓN DE CLASE
             
- #ifndef JUGADOR_H
-#define JUGADOR_H
+ #ifndef JUGADORES_H
+#define JUGADORES_H
 #ifndef EQUIPO_H
 #define EQUIPO_H
 #endif // EQUIPO_H
