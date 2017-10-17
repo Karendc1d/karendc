@@ -6,7 +6,7 @@ using namespace std;
 
 int main(){
 
-  Equipo x=("Bayern Munchen!, class Jugadores(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11));
+  Equipo x=("Bayern Munchen!, Jugadores(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11));
     x.competir();
 
   Jugadores q1=("Neuer";"arquero";1;3);
