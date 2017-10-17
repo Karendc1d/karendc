@@ -1,3 +1,189 @@
+//INT MAIN
+
+#include <iostream>
+using namespace std;
+
+int main(){
+
+  Equipo x=("Bayern Munchen!, class Jugadores(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11));
+    x.competir();
+
+  Jugadores q1=("Neuer";"arquero";1;3);
+    p1.jugar();
+    p1.print();
+  Jugadores q2=("Gotze";"defensa";20;6);
+    p2.jugar();
+    p2.print();
+   Jugadores q3=("Hummels";"defensa";5;5);
+    p3.jugar();
+    p3.print();
+   Jugadores q4=("Rafinha";"defensa";13;6);
+    p4.jugar();
+    p4.print();
+   Jugadores q5=("Ribéry";"centrocampista";7;3);
+    p5.jugar();
+    p5.print();
+   Jugadores q6=("Xabi";"centrocampista";14;6);
+    p6.jugar();
+    p6.print();
+   Jugadores q7=("Kimmich";"centrocampista";32;8);
+    p7.jugar();
+    p7.print();
+   Jugadores q8=("Lewandowski";"delantero";9;9);
+    p8.jugar();
+    p8.print();
+   Jugadores q9=("Müller";"delantero";25;8);
+    p9.jugar();
+    p9.print();
+   Jugadores q10=("Robben";"delantero";10;7);
+    p10.jugar();
+    p10.print();
+   Jugadores q11=("Lahm";"ccentrocampista";21;6);
+    p11.jugar();
+    p11.print();
+
+ Equipo y=("Borrusia Dortmun", class Jugadores(q1,q2,q3,q4,q6,q7,q8,q9,q10,q11));
+
+    y.competir();
+
+      Jugadores p1=("Neufdger";"arquero";1;3);
+    p1.jugar();
+    p1.print();
+  Jugadores p2=("Gotzedfg";"defensa";20;6);
+    p2.jugar();
+    p2.print();
+   Jugadores p3=("Hummelsdf";"defensa";5;5);
+    p3.jugar();
+    p3.print();
+   Jugadores p4=("Rafinhadfg";"defensa";13;6);
+    p4.jugar();
+    p4.print();
+   Jugadores p5=("Ribérydfg";"centrocampista";7;3);
+    p5.jugar();
+    p5.print();
+   Jugadores p6=("Xabidfg";"centrocampista";14;6);
+    p6.jugar();
+    p6.print();
+   Jugadores p7=("Kimmichgdg";"centrocampista";32;8);
+    p7.jugar();
+    p7.print();
+   Jugadores p8=("Lewandowskidfg";"delantero";9;9);
+    p8.jugar();
+    p8.print();
+   Jugadores p9=("Müllerdfg";"delantero";25;8);
+    p9.jugar();
+    p9.print();
+   Jugadores p10=("Robbendfg";"delantero";10;7);
+    p10.jugar();
+    p10.print();
+   Jugadores p11=("Lahmdfg";"ccentrocampista";21;6);
+    p11.jugar();
+    p11.print();
+
+  return 0;
+}
+
+            
+            
+            
+   
+            
+ //DEFINICIÓN DE CLASE
+            
+  #ifndef JUGADOR_H
+#define JUGADOR_H
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Equipo{
+  private:
+    string nombre;
+    class Jugadores;
+  public:
+    Equipo(string, class,class,class,class,class,class,class,class,class,class,class);
+    void competir();
+Equipo::Equipo(string z, class x){
+  nombre= z;
+  class Jugadores=x;
+}
+void competir(){
+  cout<<"¡El equipo "<<nombre<<" competirá hoy!"<<endl;
+}
+};
+
+class Jugadores{
+  private:
+    string name,posicion;
+    int camiseta;agresividad;
+  public:
+    Jugadores(string,string,int, int);
+    void jugar();
+    void print();
+
+Jugadores::Jugadores(string x,string y,int z, int w){
+  name=x;
+  posicion=y;
+  camiseta=z;
+  agresividad=w;
+}
+void Jugadores::leer(){
+  cout<<"El jugador"<<name<<"juega en la posición de "<<posicion<<"con el número de camiseta"<<camiseta<<endl;
+}
+void Jugadores::print (){
+  if (agresividad)>=5{
+    cout<<"El jugador está muy agresivo,¡Cámbialo!"<<endl;
+  }
+  else {
+    cout<<"EL jugador está calmado,déjalo jugar"<<endl;
+  }
+}
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #include <iostream>
 
 using namespace std;
