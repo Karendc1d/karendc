@@ -108,7 +108,9 @@ class Equipo{
   public:
     Equipo(string);
     void competir();
-Equipo(string z, jugadores j1,jugadores j2,jugadores j3,jugadores j4,jugadores j5,jugadores j6,jugadores j7,jugadores j8,jugadores j9,jugadores j10,jugadores j11){
+
+  Equipo(){}
+  Equipo(string z, jugadores j1,jugadores j2,jugadores j3,jugadores j4,jugadores j5,jugadores j6,jugadores j7,jugadores j8,jugadores j9,jugadores j10,jugadores j11){
   nombre= z;
   player[0]=j1;
   player[1]=j2;
@@ -135,7 +137,7 @@ class Jugadores{
     Jugadores(string,string,int, int);
     void jugar();
     void print();
-
+jugadores (){}
 Jugadores(string x,string y,int z, int w){
   name=x;
   posicion=y;
@@ -155,6 +157,12 @@ void print (){
 }
 };
 };
+
+
+
+
+
+
 
 
 
