@@ -8,9 +8,6 @@ using namespace std;
 
 int main(){
 
-  Equipo x=("Bayern Munchen", Jugadores(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11));
-    x.competir();
-
           Jugadores p1=("Neuer";"arquero";1;3);
             p1.jugar();
             p1.print();
@@ -44,10 +41,8 @@ int main(){
            Jugadores p11=("Lahm";"ccentrocampista";21;6);
             p11.jugar();
             p11.print();
-
- Equipo y=("Borrusia Dortmun", Jugadores(q1,q2,q3,q4,q6,q7,q8,q9,q10,q11));
-
-    y.competir();
+Equipo x=("Bayern Munchen", Jugadores(p1,p2,p3,p4,p5,p6,p7,p8,p9,p10,p11));
+    x.competir();
 
            Jugadores q1=("Reus", "Delantero", 11, 8);
             q1.jugar();
@@ -82,6 +77,11 @@ int main(){
            Jugadores q11=("Rode", "Volante", 18, 5);
             q11.jugar();
             q11.print();
+
+
+ Equipo y=("Borrusia Dortmun", Jugadores(q1,q2,q3,q4,q6,q7,q8,q9,q10,q11));
+
+    y.competir();
 
   return 0;
 }
@@ -155,17 +155,6 @@ void print (){
 }
 };
 };
-
-
-
-
-
-
-
-
-
-
-
 
 
 
