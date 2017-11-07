@@ -1,3 +1,318 @@
+#include <iostream>
+#include "FECHA.h"
+
+
+using namespace std;
+
+int main()
+{
+    FECHA Enero("Enero",1,2017);
+    Enero.print();
+    FECHA Febrero("Febrero",2,2017);
+    Febrero.print();
+    FECHA Marzo("Marzo",3,2017);
+    Marzo.print();
+    FECHA Abril("Abril",4,2017);
+    Abril.print();
+    FECHA Mayo("Mayo",5,2017);
+    Mayo.print();
+    FECHA Junio("Junio",6,2017);
+    Junio.print();
+    FECHA Julio("Julio",7,2017);
+    Julio.print();
+    FECHA Agosto("Agosto",8,2017);
+    Agosto.print();
+    FECHA Septiembre("Septiembre",9,2017);
+    Septiembre.print();
+    FECHA Octubre("Octubre",10,2017);
+    Octubre.print();
+    FECHA Noviembre("Noviembre",11,2017);
+    Noviembre.print();
+    FECHA Diciembre("Diciembre",12,2017);
+    Diciembre.print();
+    return 0;
+}
+
+
+#ifndef FECHA_H
+#define FECHA_H
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class FECHA
+{
+    public:
+        string mes;
+        int dia,anio;
+
+
+        FECHA(){
+
+        }
+        FECHA(string z,int x,int y){
+            dia=x;
+            anio=y;
+            mes=z;
+        }
+        void setdia(int x){
+            dia=x;
+        }
+        void setanio(int y){
+            anio=y;
+        }
+        void setmes(string z){
+            mes=z;
+        }
+        void print(){
+
+
+            cout<<"El mes es: "<<mes<<endl;
+            cout<<"El dia es: "<<dia<<endl;
+            cout<<"El anio es: "<<anio<<endl;
+
+            while(anio<2030){
+            cout<<"El anio es: "<<anio++<<endl;
+
+
+            if(anio % 4 == 0 && (anio % 100 != 0 || anio % 400 == 0)){
+                 cout<<"El anio "<<anio<<" es bisiesto "<<endl;
+            }
+            else{
+                 cout<<"El anio "<<anio<<" no es bisiesto "<<endl;
+             }
+
+        }
+
+
+        };
+
+
+
+#endif
+
+
+
+
+
+
+
+
+
+
+//Jugadores
+
+#include <iostream>
+#include "jugador.h"
+
+
+
+using namespace std;
+
+int main()
+{
+
+
+    equipo Bayern("Bayern Muninch",11);
+    Bayern.print();
+    jugador Gotze("Gotze"l,"defensa",20,6);
+    Gotze.print();
+    jugador Hummels("Hummels","defensa",5,5);
+    Hummels.print();
+    jugador Dembele("Rafinha","defensa",13,6);
+    Rafinha.print();
+    jugador Ribéry("Ribéry","centrocampista",7,3);
+    Ribéry.print();
+    jugador Xabi("Xabi","centrocampista",14,6);
+    Xabi.print();
+    jugador Kimmich("Kimmich","centrocampista",32,8);
+    Kimmich.print();
+    jugador Lewandowski("Lewandowski","delantero",9,9);
+    Lewandowski.print();
+    jugador Müller("Müller","delantero",25,8);
+    Müller.print();
+    jugador Robben("Robben","delantero",10,7);
+    Robben.print();
+    jugador Lahm("Lahm";"ccentrocampista",21,6);
+    Lahm.print();
+    jugador Rode("Rode", "Volante", 18, 5);
+    Rode.print();
+    jugador Neuer("Neuer","arquero",1,3);
+    Neuer.print();
+
+
+
+
+
+	return 0;
+}
+
+
+
+
+#ifndef JUGADOR_H
+#define JUGADOR_H
+
+
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+class equipo {
+public:
+ string name;
+ int size;
+ equipo(){
+ }
+ equipo(string _name,int _size){
+
+ name=_name;
+ size=_size;
+ }
+ void setname(string _name){
+ name=_name;
+ }
+ void setsize(int _size){
+ size=_size;
+ }
+ void print(){
+ cout<<"El nmbre del equipo es: "<<name<<endl;
+ }
+
+};
+
+
+class jugador {
+ public:
+ string posicion,nombre; 
+ int num, agresividad;
+
+ jugador() { }
+ jugador (string _nombre,string _posicion, int _num, int _agresividad){
+
+ nombre=_nombre;
+ posicion=_posicion;
+ num=_num;
+ agresividad=_agresividad;
+ }
+ void setagresividad(int _agresividad){
+ agresividad=_agresividad;
+ }
+ void setnumero(int _num){
+ num=_num;
+ }
+ void setposicion(string _posicion){
+ posicion=_posicion;
+ }
+ void setnombre(string _nombre){
+ nombre=_nombre;
+ }
+ void print (){
+ int x=0;
+ while(x<11){
+ cout<<"Jugador: "<<x++<<endl;
+
+ cout <<"El nombre del jugador es: "<<nombre<<endl;
+ cout <<"La posicion del jugador es: "<<posicion<<endl;
+ cout <<"El numero del jugador es: "<<num<<endl;
+
+ if (agresividad>6){
+ cout <<"El jugador esta agresivo!¡Cambialo!"<<endl;
+ }
+ else{
+ cout <<"El jugador esta calmado, puede jugr"<<endl;
+ }
+ }
+ }
+};
+
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 //INT MAIN
 #include <iostream>
 #include <equipos.h>
@@ -171,6 +486,40 @@ void print (){
 
 
 
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
 
 
 
